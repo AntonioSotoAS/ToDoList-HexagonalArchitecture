@@ -8,8 +8,8 @@ import java.util.List;
 public interface UserRepository {
 
     UserModel save(UserSaveModel model);
-
+    UserModel getUser(String username);
+    Boolean deleteUser(String id);
     List<UserModel> getAllUser();
-
     Boolean emailAlreadyExists(String email);
 }
